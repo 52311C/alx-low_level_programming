@@ -1,33 +1,35 @@
 #include <stdio.h>
-#include <stdlib.h>
+
 /**
  * main - Code entry
- * Description: Printing number combinations
- * Return: 0
+ * Description: Prints 3 combination of numbers
+ * Return: Always (Success)
  */
+
 int main(void)
 {
-	int c;
-	int d = 0;
-	/* your code goes there */
-	while (d < 10)
+	int c, i, k;
+
+	for (c = '0'; c <= '9'; c++)
 	{
-		c = 0;
-		while (c < 10)
+		for (i = '0'; i <= '9'; i++)
 		{
-			if (d != c && d < c)
+			for (k = '0'; k <= '9'; k++)
 			{
-				putchar('0' + d);
-				putchar('0' + c);
-				if (c + d != 17)
+				if (c < i && i < k)
 				{
-					putchar(',');
-					putchar(' ');
+					putchar(c);
+					putchar(i);
+					putchar(k);
+
+					if (c != '7')
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
 			}
-			c++;
 		}
-		d++;
 	}
 	putchar('\n');
 	return (0);
