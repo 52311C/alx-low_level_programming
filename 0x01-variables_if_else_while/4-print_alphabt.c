@@ -20,7 +20,11 @@ int main(void)
 		{
 			continue;
 		}
-	} while (ch != 'q');
+		if (ch == 'q')
+		{
+			continue;
+		}
+	} while (ch <= 'z');
 
 	putchar(ch);
 
