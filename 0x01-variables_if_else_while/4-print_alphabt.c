@@ -11,6 +11,7 @@ int main(void)
 {
 	char ch;
 
+	ch = 'a';
 	do {
 
 		putchar(ch);
