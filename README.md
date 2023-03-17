@@ -1,1 +1,1 @@
-Low level progamming
+C - variables, if, else, while
