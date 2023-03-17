@@ -17,10 +17,12 @@ int main(void)
 	while (lc <= 'z')
 	{
 		putchar(lc);
+		lc++;
 	}
 	while (uc <= 'Z')
 	{
 		putchar(uc);
+		uc++;
 	}
 	printf("\n");
 	return (0);
