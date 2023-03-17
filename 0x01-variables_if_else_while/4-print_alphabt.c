@@ -16,7 +16,11 @@ int main(void)
 
 		putchar(ch);
 		ch++;
-	} while ((ch != 'q') && (ch != 'e'));
+		if (ch == 'e')
+		{
+			continue;
+		}
+	} while (ch != 'q');
 
 	putchar(ch);
 
