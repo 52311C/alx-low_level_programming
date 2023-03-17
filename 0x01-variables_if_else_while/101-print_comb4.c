@@ -1,30 +1,33 @@
 #include <stdio.h>
-#include <unistd.h>
+#include <stdlib.h>
 /**
- * main - Entyr point
- * Description: prints two digits combination
- * Return: Always 0 (success)
+ * main - Code entry
+ * Description: Printing number combinations
+ * Return: 0
  */
 int main(void)
 {
-	int c, i;
-
-	for (c = '0'; c <= '9'; c++)
+	int c;
+	int d = 0;
+	/* your code goes there */
+	while (d < 10)
 	{
-		for (i = '0'; i <= '9'; i++)
+		c = 0;
+		while (c < 10)
 		{
-			if (c < i)
+			if (d != c && d < c)
 			{
-				putchar(c);
-				putchar(i);
-
-				if (c != '8' || (c == '8' && i != '9'))
+				putchar('0' + d);
+				putchar('0' + c);
+				if (c + d != 17)
 				{
 					putchar(',');
 					putchar(' ');
 				}
 			}
+			c++;
 		}
+		d++;
 	}
 	putchar('\n');
 	return (0);
