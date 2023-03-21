@@ -1,1 +1,1 @@
-C - variables, if, else, while
+Functions and Nested loops
