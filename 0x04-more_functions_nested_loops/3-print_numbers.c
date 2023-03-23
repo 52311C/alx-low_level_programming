@@ -3,14 +3,14 @@
 /**
  * print_numbers - code entry
  * Description: Print 0 - 9
- * Return:0
+ * Return: void
  */
 
 void print_numbers(void)
 {
 	char q;
 
-	while (q < 10)
+	while (q <= 9)
 	{
 		_putchar(q);
 		q++;
