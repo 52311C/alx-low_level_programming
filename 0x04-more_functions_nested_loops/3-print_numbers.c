@@ -8,7 +8,7 @@
 
 void print_numbers(void)
 {
-	int q;
+	char q;
 
 	for (q = 0; q < 10; q++)
 	{
