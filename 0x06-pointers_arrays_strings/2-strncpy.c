@@ -5,6 +5,7 @@
  * @dest: string value
  * @src: string value
  * @n: bytes
+ * Return: Pointer to the resulting string dest
  */
 
 char *_strncpy(char *dest, char *src, int n)
