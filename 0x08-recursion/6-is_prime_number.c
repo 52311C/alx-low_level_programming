@@ -25,7 +25,7 @@ int is_prime_number(int n)
  * prime - checks for prime numbers
  * @i: value to be checked
  * @j: value to check with
- * Return: 0 if divisible, -1 otherwise
+ * Return: 0 if divisible, 1 otherwise
  */
 
 int prime(int i, int j)
@@ -36,7 +36,7 @@ int prime(int i, int j)
 	}
 	if (j == (i / 2))
 	{
-		return (-1);
+		return (1);
 	}
 	return (prime(i, j + 1));
 }
