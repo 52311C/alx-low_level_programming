@@ -10,7 +10,7 @@ int sqrts(int n, int i);
 
 int _sqrt_recursion(int n)
 {
-	if (n == 0)
+	if (n < 0)
 	{
 		return (-1);
 	}
@@ -34,7 +34,7 @@ int sqrts(int n, int i)
 	{
 		return (-1);
 	}
-	if (n * n == i)
+	if ((n * n) == i)
 	{
 		return (n);
 	}
