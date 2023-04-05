@@ -34,7 +34,7 @@ int sqrts(int i, int j)
 	{
 		return (i);
 	}
-	if (j == (i / 2))
+	if (j > (i / 2))
 	{
 		return (-1);
 	}
