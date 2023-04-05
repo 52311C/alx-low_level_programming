@@ -23,20 +23,20 @@ int _sqrt_recursion(int n)
 
 /**
  * sqrts - calculates square root of number
- * @n: number
- * @i: square
+ * @i: number
+ * @j: square
  * Return: square root
  */
 
-int sqrts(int n, int i)
+int sqrts(int i, int j)
 {
-	if (n == i / 2)
+	if ((i * i) == j)
+	{
+		return (i);
+	}
+	if (j == (i / 2))
 	{
 		return (-1);
 	}
-	if ((n * n) == i)
-	{
-		return (n);
-	}
-	return (sqrts(n + 1, i));
+	return (sqrts(i, j + 1));
 }
