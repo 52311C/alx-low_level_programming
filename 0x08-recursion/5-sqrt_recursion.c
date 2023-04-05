@@ -34,9 +34,9 @@ int sqrts(int i, int j)
 	{
 		return (i);
 	}
-	if (j > (i / 2))
+	if (i > (j / 2))
 	{
 		return (-1);
 	}
-	return (sqrts(i, j + 1));
+	return (sqrts(j, i + 1));
 }
