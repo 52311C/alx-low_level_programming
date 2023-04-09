@@ -2,8 +2,9 @@
 #include <stdio.h>
 
 /**
- * main - code entry
- * Description: Program to print its name
+ * main - Program to print its name
+ * @argc: argument count
+ * @argv: argument vector
  * Return: 0
  */
 
