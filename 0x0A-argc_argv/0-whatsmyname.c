@@ -7,8 +7,8 @@
  * Return: 0
  */
 
-int __attribute__ ((unused)) main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
-	printf("This program's name is %s\n", argv[0]);
+	printf("This program's name is %s\n", argv[argc * 0]);
 	return (0);
 }
