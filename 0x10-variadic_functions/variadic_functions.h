@@ -2,13 +2,15 @@
 #define VARIADIC_FUNCTIONS_H
 
 /**
- * file - stdlib.h and stdio.h
+ * file - stdarg.h and stdio.h
  * Descritpion: Header files
  */
 
+#include <stdio.h>
 #include <stdarg.h>
 
 int _putchar(char c);
 int sum_them_all(const unsigned int n, ...);
+void print_numbers(const char *separator, const unsigned int n, ...);
 
 #endif
