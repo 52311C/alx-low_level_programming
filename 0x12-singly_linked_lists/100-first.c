@@ -6,6 +6,6 @@
  */
 void story(void)
 {
-	printf("You're beat! and yet, you must allow");
-	printf(",\nI bore my houe upon my back!\n");
+	printf("You're beat! and yet, you must allow,\\");
+	printf("nI bore my houe upon my back!\n");
 }
