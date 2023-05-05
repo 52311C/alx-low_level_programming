@@ -16,11 +16,6 @@ unsigned int binary_to_uint(const char *b)
 	{
 		return (0);
 	}
-	for (i = 0; b[i] != '\0'; i++)
-	{
-		;
-	}
-	i--;
 	while ((b[i] == '0') || (b[i] == '1'))
 	{
 		var <<= 1;
